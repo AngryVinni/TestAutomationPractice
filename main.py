@@ -1,11 +1,12 @@
 import requests
 import json
+from playwright.sync_api import Page, expect, sync_playwright
+import time
 id = "4"
 link = "https://jsonplaceholder.typicode.com/posts"
 link2 = "https://api.restful-api.dev/objects"
 headers = {'Content-Type': 'application/json; charset=UTF-8'}
-from playwright.sync_api import Page, expect, sync_playwright
-import time
+
 
 enter_text_field = '//input[@class ="textinput textInput form-control"]'
 
